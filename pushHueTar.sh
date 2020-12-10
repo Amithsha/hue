@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p pushHueTar/deb/tmp
-cp -rf  hue/!(pushHueTar) pushHueTar/deb/tmp/
+mv  hue/!(pushHueTar) pushHueTar/deb/tmp/
 ls pushHueTar
 
 cd pushHueTar
