@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p pushHueTar/deb/tmp
-cp -r !(pushHueTar) pushHueTar/deb/tmp/
+find . -name "*" ! -name 'pushHueTar' -exec cp "{}" pushHueTar/deb/tmp/  \;
 ls pushHueTar
 
 cd pushHueTar
