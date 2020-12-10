@@ -1,0 +1,7 @@
+Package: fk-hue-package-repo
+Version: 4.8-1.0
+Section: flipkart/base-hadoop-infra-builder
+Priority: standard
+Architecture: amd64
+Maintainer: fdp-infra-dev@flipkart.com
+Description: Clouder Hue will be pushed to reposervice

@@ -1,0 +1,17 @@
+#! /bin/bash -ex
+#TODO change package name to flipkart-hadoop-DPVersion-hadoopVersion
+
+function die()
+{
+        echo "Error: $1" >&2
+        exit 1
+}
+
+
+## Creating Tar Path
+mkdir -p pushHueTar/deb/tmp
+mv hue/!(pushHueTar) pushHueTar/deb/tmp/
+cp -rf  pushHueTar/DEBIAN pushHueTar/deb/
+
+exit 0
+#
