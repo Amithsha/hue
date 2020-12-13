@@ -2,7 +2,7 @@
 
 mkdir -p pushHueTar/deb/tmp/huePackage
 #find . -name "*" ! -name 'pushHueTar' -exec cp "{}" pushHueTar/deb/tmp/huePackage/  \;
-find . -name "*" ! -name 'pushHueTar' -exec cp -rf --parents \{\} pushHueTar/deb/tmp/huePackage/  \;
+find . -mindepth 1 -name "*" ! -name 'pushHueTar' -exec cp -rf --parents \{\} pushHueTar/deb/tmp/huePackage/  \;
 ls pushHueTar
 
 cd pushHueTar
