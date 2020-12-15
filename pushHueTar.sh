@@ -1,9 +1,8 @@
 #!/bin/bash
 
 mkdir -p pushHueTar/deb/tmp/huePackage
-#find * -mindepth 1 -name "*" ! -not -path 'pushHueTar'  -exec cp -rf --parents \{\} pushHueTar/deb/tmp/huePackage/  \;
-find /hue -mindepth 1 -type d -name 'pushHueTar' -prune -o -type f   -exec cp -rf --parents \{\} pushHueTar/deb/tmp/huePackage/  \;
-ls pushHueTar/deb/tmp/huePackage/*
+find /hue -mindepth 1 -type d -name 'pushHueTar' -prune -o -type f   -exec cp -rf --parents \{\} pushHueTar/deb/mnt/data3/huePackage/  \;
+ls pushHueTar/deb/mnt/data3/huePackage/*
 
 cd pushHueTar
 cp -rf  DEBIAN deb/
