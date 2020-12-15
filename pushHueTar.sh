@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p pushHueTar/deb/tmp/huePackage
+mkdir -p pushHueTar/deb/mnt/data3/huePackage/
 find /hue -mindepth 1 -type d -name 'pushHueTar' -prune -o -type f   -exec cp -rf --parents \{\} pushHueTar/deb/mnt/data3/huePackage/  \;
 ls pushHueTar/deb/mnt/data3/huePackage/*
 
